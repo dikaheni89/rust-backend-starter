@@ -81,7 +81,7 @@ curl http://127.0.0.1:8080/users
 Add to your `Cargo.toml`:
 
 ```toml
-rust-backend-starter = { git = "https://github.com/username/rust-backend-starter.git", branch = "main" }
+rust-backend-starter = { git = "https://github.com/dikaheni89/rust-backend-starter.git", branch = "main" }
 ```
 
 Or as a local dependency:
