@@ -146,6 +146,8 @@ src/
 
 This diagram visualizes the modular architecture of this project:
 
+<img src="/assets/arsitecture.png" width="100%" height="100%" />
+
 > The diagram above illustrates the relationships between layers (Application, Business Logic, Infrastructure, Core Utilities, and External Systems) according to this folder structure.
 
 ---
