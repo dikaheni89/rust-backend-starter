@@ -23,16 +23,9 @@ This project aims to provide a scalable, easy-to-understand code structure for r
 - [Rust Toolchain](https://www.rust-lang.org/tools/install) (`rustc`, `cargo`)
 - (Optional) [Postman](https://www.postman.com/) or `curl` for testing APIs
 
-### 2. **Installation**
+### 2. **Structure**
 
 ```sh
-# Clone this repository (replace with your repo URL if needed)
-git clone https://github.com/yourusername/rust-backend-starter.git
-cd rust-backend-starter
-
-# Run the server
-cargo run
-
 src/
 ├── application/            # Application Layer
 │   ├── api/                # API Controllers (REST)
