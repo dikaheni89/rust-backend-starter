@@ -32,3 +32,73 @@ cd rust-backend-starter
 
 # Run the server
 cargo run
+
+src/
+├── application/            # Application Layer
+│   ├── api/                # API Controllers (REST)
+│   │   └── mod.rs
+│   ├── cli/                # CLI Interface
+│   │   └── mod.rs
+│   ├── web/                # Web Interface (HTML, templating, etc)
+│   │   └── mod.rs
+│   └── mod.rs
+│
+├── business/               # Business Logic Layer
+│   ├── domain/             # Domain Models (Entities)
+│   │   ├── user.rs
+│   │   └── mod.rs
+│   ├── services/           # Service Layer (domain service, application service)
+│   │   ├── user_service.rs
+│   │   └── mod.rs
+│   ├── usecase/            # Use Cases (application logic)
+│   │   ├── create_user.rs
+│   │   └── mod.rs
+│   └── mod.rs
+│
+├── infrastructure/         # Infrastructure Layer
+│   ├── concurrency/        # Thread pool, async runtime, channel
+│   │   ├── thread_pool.rs
+│   │   ├── async_rt.rs
+│   │   ├── channel.rs
+│   │   └── mod.rs
+│   ├── memory/             # In-memory cache, object pool, buffer
+│   │   ├── cache.rs
+│   │   ├── pool.rs
+│   │   ├── buffer.rs
+│   │   └── mod.rs
+│   ├── io/                 # File/Network IO
+│   │   ├── file_io.rs
+│   │   ├── net_io.rs
+│   │   ├── stream.rs
+│   │   └── mod.rs
+│   ├── storage/            # Storage Layer (ORM & DB)
+│   │   ├── orm/            # Diesel, SQLx, SeaORM
+│   │   │   ├── diesel.rs
+│   │   │   ├── sqlx.rs
+│   │   │   ├── seaorm.rs
+│   │   │   └── mod.rs
+│   │   ├── query.rs
+│   │   ├── migrate.rs
+│   │   ├── conn_pool.rs
+│   │   ├── blob.rs
+│   │   ├── config.rs
+│   │   └── mod.rs
+│   └── mod.rs
+│
+├── core/                   # Core Utilities
+│   ├── error.rs            # thiserror, anyhow, custom errors
+│   ├── log.rs              # tracing, log, env_logger
+│   ├── metrics.rs          # metrics/monitoring
+│   ├── validation.rs       # input validation
+│   └── mod.rs
+│
+├── external/               # External Systems (API, DB, FS, Network)
+│   ├── ext_db.rs
+│   ├── ext_api.rs
+│   ├── file_sys.rs
+│   ├── network.rs
+│   └── mod.rs
+│
+├── main.rs                 # Entrypoint, wiring, server bootstrap
+└── lib.rs                  # Library entrypoint (if needed)
+
